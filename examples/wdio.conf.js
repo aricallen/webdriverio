@@ -189,7 +189,7 @@ exports.config = {
         require: [],        // <string[]> (file/dir) require files before executing features
         strict: false,      // <boolean> fail if there are any undefined or pending steps
         tags: [],           // <string[]> (expression) only execute the features or scenarios with tags matching the expression
-        timeout: 20000      // <number> timeout for step definitions
+        timeout: 20000,      // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
     //
@@ -252,7 +252,7 @@ exports.config = {
     // Gets executed after all workers got shut down and the process is about to exit. It is not
     // possible to defer the end of the process using a promise.
     onComplete: function (exitCode) {
-    }
+    },
     //
     // Cucumber specific hooks
     beforeFeature: function (feature) {
